@@ -1,0 +1,52 @@
+============================================================
+📄 TERMOS DE LICENÇA DE USO - [SEU NOME OU MARCA]
+============================================================
+Produto: Nexus Premium Template v1.0
+Licença: Licença de Uso Único (Single-Use License)
+
+Ao adquirir este template, você concorda com os seguintes 
+termos e condições de uso:
+
+1. ESCOPO DA LICENÇA
+------------------------------------------------------------
+Esta licença concede a você, o comprador, o direito não 
+exclusivo de utilizar este template para a criação de 
+APENAS 01 (UM) PROJETO FINAL (seja para uso próprio ou 
+para um cliente final).
+
+2. O QUE VOCÊ PODE FAZER (PERMITIDO)
+------------------------------------------------------------
+✅ Modificar cores, textos, imagens e estrutura do código.
+✅ Utilizar o template em um domínio (site) específico.
+✅ Cobrar de um cliente pela personalização e instalação 
+   deste template em um projeto único.
+
+3. O QUE VOCÊ NÃO PODE FAZER (PROIBIDO)
+------------------------------------------------------------
+❌ Redistribuir ou revender o código-fonte original ou 
+   modificado em marketplaces (Hotmart, Envato, etc).
+❌ Compartilhar os arquivos com terceiros que não 
+   adquiriram a licença.
+❌ Utilizar o mesmo arquivo para múltiplos sites/clientes 
+   sem adquirir novas licenças individuais.
+❌ Remover os créditos de desenvolvimento ocultos no 
+   código (comentários de autoria), a menos que uma 
+   licença "White Label" seja negociada.
+
+4. LIMITAÇÃO DE RESPONSABILIDADE
+------------------------------------------------------------
+O software é fornecido "como está". O desenvolvedor não se 
+responsabiliza por modificações incorretas feitas pelo 
+usuário que venham a quebrar o layout ou funcionalidades, 
+nem por danos decorrentes do uso inadequado do código.
+
+5. SUPORTE
+------------------------------------------------------------
+Esta licença não inclui suporte vitalício para novos 
+recursos, apenas correção de bugs nativos do arquivo 
+original reportados em até 30 dias após a compra.
+
+============================================================
+O descumprimento destes termos poderá acarretar em 
+notificações extrajudiciais e suspensão do direito de uso.
+============================================================

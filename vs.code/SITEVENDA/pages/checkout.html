@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalizar Pedido | Nexus Premium</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .checkout-container {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+        .checkout-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            padding: 40px;
+            border-radius: 24px;
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+        }
+        .step-indicator {
+            color: var(--primary);
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+            display: block;
+        }
+        .checkout-card h1 { margin-bottom: 15px; font-size: 28px; }
+        .checkout-card p { color: var(--text-dim); margin-bottom: 30px; }
+        
+        .input-group { text-align: left; margin-bottom: 20px; }
+        .input-group label { display: block; margin-bottom: 8px; font-size: 14px; color: var(--text-main); }
+        
+        .back-link {
+            display: inline-block;
+            margin-top: 20px;
+            color: var(--text-dim);
+            text-decoration: none;
+            font-size: 14px;
+            transition: var(--transition);
+        }
+        .back-link:hover { color: var(--primary); }
+    </style>
+</head>
+<body>
+    <div class="checkout-container">
+        <div class="checkout-card reveal active">
+            <span class="step-indicator">Quase lá</span>
+            <h1>Finalize seu Acesso</h1>
+            <p>Insira seus dados abaixo para processar o pagamento seguro via Nexus Pay.</p>
+
+            <form action="#" class="contact-form" style="padding: 0; background: transparent;">
+                <div class="input-group">
+                    <label>Nome Completo</label>
+                    <input type="text" placeholder="Ex: João Silva" required style="width: 100%;">
+                </div>
+                <div class="input-group">
+                    <label>E-mail Corporativo</label>
+                    <input type="email" placeholder="seu@email.com" required style="width: 100%;">
+                </div>
+                <div class="input-group">
+                    <label>Número do Cartão / PIX</label>
+                    <input type="text" placeholder="0000 0000 0000 0000" style="width: 100%;">
+                </div>
+                
+                <button type="submit" class="btn btn-primary full-width" style="padding: 18px;">
+                    Confirmar Pagamento
+                </button>
+            </form>
+
+            <a href="index.html" class="back-link">← Voltar para a página inicial</a>
+        </div>
+    </div>
+
+</body>
+</html>

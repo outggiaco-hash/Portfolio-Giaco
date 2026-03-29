@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Detalhado | Aura Studio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Urbanist:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilos específicos para a página de projeto para manter o arquivo style.css limpo */
+        .project-hero {
+            padding-top: 150px;
+            background-color: var(--bg-color);
+        }
+        .project-header {
+            max-width: 800px;
+            margin-bottom: 60px;
+        }
+        .project-meta {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 30px;
+            padding: 40px 0;
+            border-top: 1px solid rgba(0,0,0,0.1);
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+            margin-bottom: 60px;
+        }
+        .meta-item span {
+            display: block;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--accent-clay);
+            margin-bottom: 5px;
+        }
+        .meta-item p {
+            font-weight: 600;
+            margin: 0;
+            color: var(--text-dark);
+        }
+        .main-image {
+            width: 100%;
+            height: 70vh;
+            object-fit: cover;
+            border-radius: 40px;
+            margin-bottom: 80px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.05);
+        }
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            margin-bottom: 100px;
+        }
+        .sticky-title {
+            position: sticky;
+            top: 120px;
+            height: fit-content;
+        }
+        .back-button {
+            margin-bottom: 30px;
+            display: inline-block;
+            color: var(--text-dark);
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+        .back-button:hover { color: var(--accent-sage); transform: translateX(-5px); }
+        
+        @media (max-width: 768px) {
+            .content-grid { grid-template-columns: 1fr; gap: 40px; }
+            .project-hero { padding-top: 100px; }
+            h1 { font-size: 2.8rem; }
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar" class="scrolled">
+        <div class="container nav-container">
+            <a href="index.html" class="logo" style="text-decoration: none;">AURA</a>
+            <a href="index.html" class="btn btn-organic">Voltar ao Início</a>
+        </div>
+    </nav>
+
+  <main class="project-hero">
+        <div class="container">
+            <a href="index.html" class="back-button"><i class="fas fa-arrow-left"></i> Voltar à Galeria</a>
+            
+            <div class="project-header reveal">
+                <span class="organic-shape-sm">Branding & Experience</span>
+                <h1>Lumina: Redefinindo o equilíbrio digital através do design.</h1>
+            </div>
+
+            <div class="project-meta reveal">
+                <div class="meta-item">
+                    <span>Cliente</span>
+                    <p>Lumina Lab</p>
+                </div>
+                <div class="meta-item">
+                    <span>Serviços</span>
+                    <p>Visual Identity & Web</p>
+                </div>
+                <div class="meta-item">
+                    <span>Duração</span>
+                    <p>6 Semanas</p>
+                </div>
+                <div class="meta-item">
+                    <span>Ano</span>
+                    <p>2026</p>
+                </div>
+            </div>
+
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200" alt="Lumina Dashboard" class="main-image reveal">
+
+            <div class="content-grid">
+                <div class="sticky-title reveal">
+                    <h2 class="serif">A Visão do <em>Projeto</em></h2>
+                </div>
+                <div class="reveal">
+                    <p>A Lumina nos procurou com um desafio único: como tornar uma plataforma de análise de dados em algo relaxante e intuitivo? O mercado de tecnologia é saturado de cores neon e interfaces agressivas. Nossa resposta foi o <strong>Digital Zen</strong>.</p>
+                    <p>Utilizamos uma paleta de cores baseada em tons de areia e sálvia, eliminando sombras pesadas e substituindo-as por gradientes suaves e formas que lembram pedras de rio. O resultado foi uma redução de 30% no tempo de aprendizado dos novos usuários.</p>
+                </div>
+            </div>
+
+            <div class="grid-2 reveal" style="margin-bottom: 100px;">
+                <div class="organic-blob" style="height: 400px; border-radius: 40px 100px 40px 100px;">
+                    <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=800" alt="Processo Criativo" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div style="padding: 20px; display: flex; flex-direction: column; justify-content: center;">
+                    <h3 class="serif">Tipografia e Fluidez</h3>
+                    <p>Escolhemos fontes que equilibram a precisão técnica com a elegância clássica. Cada interação na página foi animada para parecer orgânica — nada aparece "do nada", tudo flui para o seu lugar, respeitando o ritmo visual do usuário.</p>
+                </div>
+            </div>
+
+            <div class="section-padding bg-soft-sage reveal" style="border-radius: 40px; padding: 60px; margin-bottom: 80px;">
+                <div class="grid-3" style="text-align: center;">
+                    <div>
+                        <h2 class="serif" style="font-size: 3rem; color: var(--accent-clay);">+45%</h2>
+                        <p>Aumento em engajamento diário</p>
+                    </div>
+                    <div>
+                        <h2 class="serif" style="font-size: 3rem; color: var(--accent-clay);">1.2s</h2>
+                        <p>Tempo de carregamento médio</p>
+                    </div>
+                    <div>
+                        <h2 class="serif" style="font-size: 3rem; color: var(--accent-clay);">100%</h2>
+                        <p>Interface responsiva adaptada</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-padding bg-clay text-white reveal" style="border-radius: 40px; margin-bottom: 100px; padding: 60px;">
+                <h2 class="serif" style="text-align: center;">"Trabalhar com a Aura foi como ver nossa ideia ganhar alma. Eles entenderam que o design não é apenas como algo parece, mas como ele faz você se sentir."</h2>
+                <p style="text-align: center; margin-top: 20px; font-weight: 600;">— Julian Carter, Founder @ Lumina</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="section-padding">
+        <div class="container footer-grid">
+            <div class="logo">AURA</div>
+            <p class="copyright">&copy; 2026 Aura Studio. Próximo projeto?</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siga a Nexus | Links Oficiais</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .links-page {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+            background: radial-gradient(circle at top, #1a1a2e 0%, var(--dark-bg) 100%);
+        }
+
+        .profile-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .profile-logo {
+            width: 80px;
+            height: 80px;
+            background: var(--primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            font-weight: 800;
+            margin: 0 auto 15px;
+            box-shadow: 0 0 30px rgba(138, 43, 226, 0.5);
+            border: 3px solid rgba(255,255,255,0.1);
+        }
+
+        .links-container {
+            width: 100%;
+            max-width: 450px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .social-link {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            padding: 18px 25px;
+            border-radius: 12px;
+            color: var(--text-main);
+            text-decoration: none;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+
+        .social-link i {
+            font-size: 1.2rem;
+            width: 30px;
+            color: var(--primary);
+        }
+
+        .social-link:hover {
+            transform: scale(1.03);
+            border-color: var(--primary);
+            background: rgba(138, 43, 226, 0.05);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        }
+
+        .social-link .arrow {
+            font-size: 0.8rem;
+            opacity: 0.5;
+        }
+
+        .back-home {
+            margin-top: 50px;
+            font-size: 14px;
+            color: var(--text-dim);
+            text-decoration: none;
+        }
+
+        .back-home:hover { color: var(--text-main); }
+    </style>
+</head>
+<body>
+    <div class="links-page">
+        <div class="profile-header reveal active">
+            <div class="profile-logo">N</div>
+            <h1>Nexus Digital</h1>
+            <p>Elevando seu negócio ao próximo nível.</p>
+        </div>
+
+        <div class="links-container">
+            <a href="index.html" class="social-link reveal active">
+                <span><i class="fa-solid fa-globe"></i> Visite nosso Site</span>
+                <span class="arrow"><i class="fa-solid fa-chevron-right"></i></span>
+            </a>
+
+            <a href="https://instagram.com" target="_blank" class="social-link reveal active">
+                <span><i class="fa-brands fa-instagram"></i> Instagram Oficial</span>
+                <span class="arrow"><i class="fa-solid fa-chevron-right"></i></span>
+            </a>
+
+            <a href="https://linkedin.com" target="_blank" class="social-link reveal active">
+                <span><i class="fa-brands fa-linkedin-in"></i> LinkedIn Hub</span>
+                <span class="arrow"><i class="fa-solid fa-chevron-right"></i></span>
+            </a>
+
+            <a href="https://wa.me/seu-numero" target="_blank" class="social-link reveal active">
+                <span><i class="fa-brands fa-whatsapp"></i> Fale no WhatsApp</span>
+                <span class="arrow"><i class="fa-solid fa-chevron-right"></i></span>
+            </a>
+
+            <a href="checkout.html" class="social-link reveal active" style="background: var(--primary); border: none;">
+                <span><i class="fa-solid fa-rocket" style="color: white;"></i> <strong>Comprar Template Agora</strong></span>
+                <span class="arrow" style="opacity: 1;"><i class="fa-solid fa-chevron-right" style="color: white;"></i></span>
+            </a>
+        </div>
+
+        <a href="index.html" class="back-home">← Voltar para a Nexus</a>
+    </div>
+
+</body>
+</html>

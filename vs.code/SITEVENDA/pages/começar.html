@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Começar Agora | Nexus Experience</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .onboarding-page {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: radial-gradient(circle at bottom right, rgba(138, 43, 226, 0.1), var(--dark-bg));
+            padding: 40px 20px;
+        }
+
+        .onboarding-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 32px;
+            padding: 60px 40px;
+            max-width: 900px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 30px 60px rgba(0,0,0,0.5);
+        }
+
+        .onboarding-header h1 {
+            font-size: clamp(1.8rem, 4vw, 2.5rem);
+            margin-bottom: 15px;
+        }
+
+        .onboarding-header p {
+            color: var(--text-dim);
+            margin-bottom: 40px;
+            font-size: 1.1rem;
+        }
+
+        .options-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .option-item {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid var(--border);
+            padding: 30px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: var(--transition);
+            text-align: left;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .option-item:hover {
+            border-color: var(--primary);
+            background: rgba(138, 43, 226, 0.05);
+            transform: translateY(-5px);
+        }
+
+        .option-item i {
+            font-size: 24px;
+            color: var(--primary);
+            margin-bottom: 20px;
+            display: block;
+        }
+        .option-item h3 { margin-bottom: 10px; }
+        .option-item p { font-size: 14px; color: var(--text-dim); }
+
+        .option-item.popular {
+            border: 2px solid var(--primary);
+        }
+
+        .popular-badge {
+            position: absolute;
+            top: 15px;
+            right: -30px;
+            background: var(--primary);
+            color: white;
+            font-size: 10px;
+            font-weight: 700;
+            padding: 5px 40px;
+            transform: rotate(45deg);
+        }
+
+        .action-area {
+            border-top: 1px solid var(--border);
+            padding-top: 30px;
+        }
+
+        @media (max-width: 600px) {
+            .onboarding-card { padding: 40px 20px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="onboarding-page">
+        <div class="onboarding-card reveal active">
+            <div class="onboarding-header">
+                <span class="badge">Passo 1 de 2</span>
+                <h1>Como você quer <span class="text-gradient">começar?</span></h1>
+                <p>Selecione o perfil que melhor descreve sua necessidade atual.</p>
+            </div>
+
+            <div class="options-grid">
+                <div class="option-item" onclick="selecionar('Individual')">
+                    <i class="fa-solid fa-user"></i>
+                    <h3>Individual</h3>
+                    <p>Perfeito para freelancers e criadores independentes que buscam escala.</p>
+                </div>
+
+                <div class="option-item popular" onclick="selecionar('Startup')">
+                    <div class="popular-badge">RECOMENDADO</div>
+                    <i class="fa-solid fa-rocket"></i>
+                    <h3>Startup / Empresa</h3>
+                    <p>Soluções completas para times que precisam de performance e colaboração.</p>
+                </div>
+
+                <div class="option-item" onclick="selecionar('Enterprise')">
+                    <i class="fa-solid fa-building"></i>
+                    <h3>Enterprise</h3>
+                    <p>Segurança avançada e suporte dedicado para grandes corporações.</p>
+                </div>
+            </div>
+
+            <div class="action-area">
+                <button onclick="proximo()" class="btn btn-primary" style="padding: 15px 50px;">
+                    Continuar <i class="fa-solid fa-arrow-right" style="margin-left: 10px;"></i>
+                </button>
+                <br>
+                <a href="index.html" class="back-link" style="display: inline-block; margin-top: 20px; color: var(--text-dim); text-decoration: none; font-size: 13px;">
+                    Voltar para o início
+                </a>
+            </div>
+        </div>
+    </div>
+    <script>
+        let selecao = "";
+
+        function selecionar(tipo) {
+            selecao = tipo;
+            // Remove destaque de todos e adiciona no clicado
+            document.querySelectorAll('.option-item').forEach(item => {
+                item.style.borderColor = 'rgba(255, 255, 255, 0.08)';
+                item.style.background = 'rgba(255, 255, 255, 0.02)';
+            });
+            event.currentTarget.style.borderColor = '#8a2be2';
+            event.currentTarget.style.background = 'rgba(138, 43, 226, 0.05)';
+        }
+
+        function proximo() {
+            if (!selecao) {
+                alert("Por favor, selecione uma opção para continuar.");
+                return;
+            }
+            // Redireciona para o checkout levando a informação do plano
+            window.location.href = `checkout.html?plano=${selecao}`;
+        }
+    </script>
+</body>
+</html>

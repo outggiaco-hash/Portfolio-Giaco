@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Serviço | Nexus Premium</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .service-detail-page { padding-top: 120px; min-height: 100vh; }
+        .content-block { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+        .service-badge { color: var(--primary); font-weight: 700; letter-spacing: 2px; text-transform: uppercase; font-size: 12px; }
+        .service-detail-page h1 { font-size: 3rem; margin: 20px 0; }
+        .main-image { 
+            width: 100%; height: 400px; background: var(--card-bg); 
+            border-radius: 24px; margin-bottom: 40px; border: 1px solid var(--border);
+            display: flex; align-items: center; justify-content: center; font-size: 4rem; opacity: 0.5;
+        }
+        .feature-list { list-style: none; margin: 30px 0; }
+        .feature-list li { margin-bottom: 15px; display: flex; align-items: center; gap: 15px; color: var(--text-dim); }
+        .feature-list i { color: #2ecc71; }
+        .cta-box { 
+            background: var(--card-bg); padding: 40px; border-radius: 20px; 
+            border: 1px solid var(--primary); text-align: center; margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="service-detail-page">
+        <div class="content-block reveal active">
+            <span class="service-badge">Especialidade Nexus</span>
+            <h1 id="service-title">Nome do Serviço</h1>
+            
+            <div class="main-image">
+                <i class="fa-solid fa-layer-group"></i>
+            </div>
+
+            <p style="font-size: 1.2rem; color: var(--text-dim); margin-bottom: 30px;">
+                Nossa abordagem para este serviço combina tecnologia de ponta com estratégia de mercado, garantindo que sua empresa não apenas acompanhe a concorrência, mas a supere.
+            </p>
+
+            <h3>O que está incluso:</h3>
+            <ul class="feature-list">
+                <li><i class="fa-solid fa-check"></i> Análise técnica e estratégica personalizada</li>
+                <li><i class="fa-solid fa-check"></i> Implementação com tecnologias de última geração</li>
+                <li><i class="fa-solid fa-check"></i> Suporte dedicado 24/7 para sua operação</li>
+                <li><i class="fa-solid fa-check"></i> Relatórios mensais de performance e ROI</li>
+            </ul>
+
+            <div class="cta-box">
+                <h2>Pronto para elevar seu nível?</h2>
+                <p style="margin-bottom: 25px;">Agende uma consultoria gratuita para discutir seu projeto.</p>
+                <a href="contato.html" id="cta-service" class="btn btn-primary">Falar com Especialista</a>
+            </div>
+
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="index.html" style="color: var(--text-dim); text-decoration: none; font-size: 14px;">← Voltar para Serviços</a>
+            </div>
+        </div>
+    </section>
+    <script>
+        // Pega o nome do serviço da URL
+        const params = new URLSearchParams(window.location.search);
+        const servicoNome = params.get('servico') || 'Nosso Serviço';
+        document.getElementById('service-title').innerText = servicoNome;
+        
+        // Dinamiza o CTA (opcional: levar para o checkout ou contato)
+        document.getElementById('cta-service').href = `checkout.html?plano=Consultoria-${encodeURIComponent(servicoNome)}`;
+    </script>
+</body>
+</html>
